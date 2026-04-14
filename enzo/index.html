@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guia Profissional</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+/* HEADER */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* MENU */
+nav {
+    background: #34495e;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+/* SEÇÕES */
+section {
+    padding: 30px;
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+}
+
+/* TÍTULOS */
+h2 {
+    color: #2c3e50;
+}
+
+/* LISTA */
+ul {
+    line-height: 1.8;
+}
+
+/* CAIXA DE DICA */
+.dica {
+    background: #eafaf1;
+    padding: 15px;
+    border-left: 5px solid #27ae60;
+    margin-top: 15px;
+}
+
+/* ERROS */
+.erro {
+    background: #fdecea;
+    padding: 15px;
+    border-left: 5px solid red;
+    margin-top: 15px;
+}
+
+/* BOTÃO */
+button {
+    padding: 10px 20px;
+    background: #27ae60;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #219150;
+}
+
+/* EXEMPLO OCULTO */
+#curriculo {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #2c3e50;
+    color: white;
+    margin-top: 20px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+</style>
+
+<script>
+function mostrarCurriculo() {
+    var div = document.getElementById("curriculo");
+    if (div.style.display === "none") {
+        div.style.display = "block";
+    } else {
+        div.style.display = "none";
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Guia do Mundo do Trabalho</h1>
+    <p>Dicas para sucesso profissional</p>
+</header>
+
+<nav>
+    <a href="#comportamento">Comportamento</a>
+    <a href="#curriculoSec">Currículo</a>
+    <a href="#erros">Erros</a>
+</nav>
+
+<section id="comportamento">
+    <h2>💼 Como se comportar no trabalho</h2>
+    <ul>
+        <li>Seja pontual</li>
+        <li>Respeite todos</li>
+        <li>Comunique-se bem</li>
+        <li>Seja responsável</li>
+        <li>Tenha atitude profissional</li>
+        <li>Evite fofocas</li>
+    </ul>
+
+    <div class="dica">
+        💡 Profissionais que têm boa atitude crescem mais rápido na carreira.
+    </div>
+</section>
+
+<section id="curriculoSec">
+    <h2>📄 Como fazer um currículo</h2>
+    <ul>
+        <li>Dados pessoais claros</li>
+        <li>Objetivo profissional</li>
+        <li>Formação</li>
+        <li>Experiência</li>
+        <li>Habilidades</li>
+    </ul>
+
+    <button onclick="mostrarCurriculo()">Ver exemplo de currículo</button>
+
+    <div id="curriculo">
+        <p>
+        <strong>Nome:</strong> João Silva<br>
+        <strong>Telefone:</strong> (00) 00000-0000<br>
+        <strong>Email:</strong> exemplo@email.com<br><br>
+
+        <strong>Objetivo:</strong> Trabalhar na área administrativa<br><br>
+
+        <strong>Formação:</strong> Ensino Médio Completo<br><br>
+
+        <strong>Experiência:</strong> Atendimento ao cliente<br><br>
+
+        <strong>Habilidades:</strong> Comunicação, informática básica
+        </p>
+    </div>
+
+    <div class="dica">
+        💡 Currículos simples e bem organizados são mais valorizados.
+    </div>
+</section>
+
+<section id="erros">
+    <h2>❌ Erros comuns</h2>
+    <ul>
+        <li>Erros de português</li>
+        <li>Informações falsas</li>
+        <li>Currículo muito grande</li>
+        <li>Email não profissional</li>
+    </ul>
+
+    <div class="erro">
+        ⚠️ Evite exageros e mentiras — isso pode te prejudicar.
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 - Guia Profissional</p>
+</footer>
+
+</body>
+</html>
