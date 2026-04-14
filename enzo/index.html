@@ -1,201 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Guia Profissional</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Profissional - Mundo do Trabalho</title>
 
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #f4f4f4;
-}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+        }
 
-/* HEADER */
-header {
-    background: #2c3e50;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
 
-/* MENU */
-nav {
-    background: #34495e;
-    padding: 10px;
-    text-align: center;
-}
+        section {
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
 
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-}
+        h2 {
+            color: #2c3e50;
+        }
 
-/* SEÇÕES */
-section {
-    padding: 30px;
-    max-width: 900px;
-    margin: 20px auto;
-    background: white;
-    border-radius: 10px;
-}
+        ul {
+            line-height: 1.8;
+        }
 
-/* TÍTULOS */
-h2 {
-    color: #2c3e50;
-}
+        .dica {
+            background: #eafaf1;
+            padding: 15px;
+            border-left: 5px solid #27ae60;
+            margin-top: 15px;
+        }
 
-/* LISTA */
-ul {
-    line-height: 1.8;
-}
-
-/* CAIXA DE DICA */
-.dica {
-    background: #eafaf1;
-    padding: 15px;
-    border-left: 5px solid #27ae60;
-    margin-top: 15px;
-}
-
-/* ERROS */
-.erro {
-    background: #fdecea;
-    padding: 15px;
-    border-left: 5px solid red;
-    margin-top: 15px;
-}
-
-/* BOTÃO */
-button {
-    padding: 10px 20px;
-    background: #27ae60;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background: #219150;
-}
-
-/* EXEMPLO OCULTO */
-#curriculo {
-    display: none;
-    margin-top: 20px;
-    padding: 15px;
-    background: #f9f9f9;
-    border-radius: 10px;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 15px;
-    background: #2c3e50;
-    color: white;
-    margin-top: 20px;
-}
-
-/* RESPONSIVO */
-@media (max-width: 600px) {
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-}
-</style>
-
-<script>
-function mostrarCurriculo() {
-    var div = document.getElementById("curriculo");
-    if (div.style.display === "none") {
-        div.style.display = "block";
-    } else {
-        div.style.display = "none";
-    }
-}
-</script>
-
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #2c3e50;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
     <h1>Guia do Mundo do Trabalho</h1>
-    <p>Dicas para sucesso profissional</p>
+    <p>Aprenda a se comportar profissionalmente e montar um currículo ideal</p>
 </header>
 
-<nav>
-    <a href="#comportamento">Comportamento</a>
-    <a href="#curriculoSec">Currículo</a>
-    <a href="#erros">Erros</a>
-</nav>
-
-<section id="comportamento">
+<section>
     <h2>💼 Como se comportar no trabalho</h2>
     <ul>
-        <li>Seja pontual</li>
-        <li>Respeite todos</li>
-        <li>Comunique-se bem</li>
-        <li>Seja responsável</li>
-        <li>Tenha atitude profissional</li>
-        <li>Evite fofocas</li>
+        <li>Seja pontual e responsável</li>
+        <li>Respeite colegas e superiores</li>
+        <li>Tenha uma boa comunicação</li>
+        <li>Evite conflitos e mantenha postura profissional</li>
+        <li>Seja proativo e demonstre interesse</li>
+        <li>Vista-se de forma adequada ao ambiente</li>
     </ul>
 
     <div class="dica">
-        💡 Profissionais que têm boa atitude crescem mais rápido na carreira.
+        💡 Dica: A atitude profissional é tão importante quanto o conhecimento técnico.
     </div>
 </section>
 
-<section id="curriculoSec">
-    <h2>📄 Como fazer um currículo</h2>
+<section>
+    <h2>📄 Como fazer um currículo correto</h2>
+
     <ul>
-        <li>Dados pessoais claros</li>
-        <li>Objetivo profissional</li>
-        <li>Formação</li>
-        <li>Experiência</li>
-        <li>Habilidades</li>
+        <li>Coloque seus dados pessoais (nome, telefone e email)</li>
+        <li>Faça um resumo profissional objetivo</li>
+        <li>Liste sua formação escolar</li>
+        <li>Inclua experiências (mesmo que informais)</li>
+        <li>Adicione cursos e habilidades</li>
+        <li>Evite erros de português</li>
     </ul>
-
-    <button onclick="mostrarCurriculo()">Ver exemplo de currículo</button>
-
-    <div id="curriculo">
-        <p>
-        <strong>Nome:</strong> João Silva<br>
-        <strong>Telefone:</strong> (00) 00000-0000<br>
-        <strong>Email:</strong> exemplo@email.com<br><br>
-
-        <strong>Objetivo:</strong> Trabalhar na área administrativa<br><br>
-
-        <strong>Formação:</strong> Ensino Médio Completo<br><br>
-
-        <strong>Experiência:</strong> Atendimento ao cliente<br><br>
-
-        <strong>Habilidades:</strong> Comunicação, informática básica
-        </p>
-    </div>
 
     <div class="dica">
-        💡 Currículos simples e bem organizados são mais valorizados.
+        💡 Dica: Mantenha seu currículo simples, claro e com no máximo 1 página.
     </div>
 </section>
 
-<section id="erros">
-    <h2>❌ Erros comuns</h2>
-    <ul>
-        <li>Erros de português</li>
-        <li>Informações falsas</li>
-        <li>Currículo muito grande</li>
-        <li>Email não profissional</li>
-    </ul>
+<section>
+    <h2>🚀 Exemplo de estrutura de currículo</h2>
+    <p>
+        <strong>Nome Completo</strong><br>
+        Telefone | Email<br><br>
 
-    <div class="erro">
-        ⚠️ Evite exageros e mentiras — isso pode te prejudicar.
-    </div>
+        <strong>Objetivo:</strong> Buscar oportunidade na área...<br><br>
+
+        <strong>Formação:</strong><br>
+        Ensino Médio Completo<br><br>
+
+        <strong>Experiência:</strong><br>
+        Auxiliar / Atendimento...<br><br>
+
+        <strong>Habilidades:</strong><br>
+        Comunicação, trabalho em equipe, informática básica
+    </p>
 </section>
 
 <footer>
