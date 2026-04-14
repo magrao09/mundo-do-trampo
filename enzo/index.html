@@ -1,119 +1,226 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia Profissional - Mundo do Trabalho</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guia Profissional</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f4f4f4;
-        }
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        header {
-            background: #2c3e50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    color: #333;
+}
 
-        section {
-            padding: 30px;
-            max-width: 900px;
-            margin: auto;
-            background: white;
-            margin-top: 20px;
-            border-radius: 10px;
-        }
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #2c3e50, #1a252f);
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
 
-        h2 {
-            color: #2c3e50;
-        }
+/* MENU */
+nav {
+    background: #34495e;
+    text-align: center;
+    padding: 10px;
+}
 
-        ul {
-            line-height: 1.8;
-        }
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        .dica {
-            background: #eafaf1;
-            padding: 15px;
-            border-left: 5px solid #27ae60;
-            margin-top: 15px;
-        }
+nav a:hover {
+    color: #27ae60;
+}
 
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #2c3e50;
-            color: white;
-            margin-top: 20px;
-        }
-    </style>
+/* SEÇÕES */
+section {
+    background: white;
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    animation: fade 0.8s ease;
+}
+
+/* TÍTULOS */
+h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* LISTA */
+ul {
+    line-height: 1.8;
+}
+
+/* CAIXAS */
+.dica {
+    background: #eafaf1;
+    padding: 15px;
+    border-left: 5px solid #27ae60;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.erro {
+    background: #fdecea;
+    padding: 15px;
+    border-left: 5px solid red;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/* BOTÃO */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #27ae60;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #219150;
+    transform: scale(1.05);
+}
+
+/* CURRÍCULO */
+#curriculo {
+    display: none;
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ANIMAÇÃO */
+@keyframes fade {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+</style>
+
+<script>
+function mostrarCurriculo() {
+    const div = document.getElementById("curriculo");
+    div.style.display = (div.style.display === "block") ? "none" : "block";
+}
+</script>
+
 </head>
 
 <body>
 
 <header>
     <h1>Guia do Mundo do Trabalho</h1>
-    <p>Aprenda a se comportar profissionalmente e montar um currículo ideal</p>
+    <p>Como se comportar e montar um currículo profissional</p>
 </header>
 
-<section>
-    <h2>💼 Como se comportar no trabalho</h2>
+<nav>
+    <a href="#comportamento">Comportamento</a>
+    <a href="#curriculoSec">Currículo</a>
+    <a href="#erros">Erros</a>
+</nav>
+
+<section id="comportamento">
+    <h2>💼 Comportamento no Trabalho</h2>
     <ul>
         <li>Seja pontual e responsável</li>
         <li>Respeite colegas e superiores</li>
-        <li>Tenha uma boa comunicação</li>
-        <li>Evite conflitos e mantenha postura profissional</li>
-        <li>Seja proativo e demonstre interesse</li>
-        <li>Vista-se de forma adequada ao ambiente</li>
+        <li>Comunique-se com clareza</li>
+        <li>Evite conflitos e fofocas</li>
+        <li>Demonstre interesse e iniciativa</li>
+        <li>Vista-se de forma adequada</li>
     </ul>
 
     <div class="dica">
-        💡 Dica: A atitude profissional é tão importante quanto o conhecimento técnico.
+        💡 Profissionais com boa atitude têm mais chances de crescer.
     </div>
 </section>
 
-<section>
-    <h2>📄 Como fazer um currículo correto</h2>
-
+<section id="curriculoSec">
+    <h2>📄 Como fazer um currículo</h2>
     <ul>
-        <li>Coloque seus dados pessoais (nome, telefone e email)</li>
-        <li>Faça um resumo profissional objetivo</li>
-        <li>Liste sua formação escolar</li>
-        <li>Inclua experiências (mesmo que informais)</li>
-        <li>Adicione cursos e habilidades</li>
-        <li>Evite erros de português</li>
+        <li>Nome, telefone e email</li>
+        <li>Objetivo profissional</li>
+        <li>Formação escolar</li>
+        <li>Experiência (mesmo informal)</li>
+        <li>Habilidades</li>
     </ul>
 
+    <button onclick="mostrarCurriculo()">Ver exemplo</button>
+
+    <div id="curriculo">
+        <p>
+        <strong>Nome:</strong> João Silva<br>
+        <strong>Telefone:</strong> (00) 00000-0000<br>
+        <strong>Email:</strong> joao@email.com<br><br>
+
+        <strong>Objetivo:</strong> Atuar na área administrativa<br><br>
+
+        <strong>Formação:</strong> Ensino Médio Completo<br><br>
+
+        <strong>Experiência:</strong> Atendimento ao cliente<br><br>
+
+        <strong>Habilidades:</strong> Comunicação, trabalho em equipe
+        </p>
+    </div>
+
     <div class="dica">
-        💡 Dica: Mantenha seu currículo simples, claro e com no máximo 1 página.
+        💡 Mantenha o currículo simples e com no máximo 1 página.
     </div>
 </section>
 
-<section>
-    <h2>🚀 Exemplo de estrutura de currículo</h2>
-    <p>
-        <strong>Nome Completo</strong><br>
-        Telefone | Email<br><br>
+<section id="erros">
+    <h2>❌ Erros comuns</h2>
+    <ul>
+        <li>Erros de português</li>
+        <li>Informações falsas</li>
+        <li>Currículo muito grande</li>
+        <li>Email não profissional</li>
+    </ul>
 
-        <strong>Objetivo:</strong> Buscar oportunidade na área...<br><br>
-
-        <strong>Formação:</strong><br>
-        Ensino Médio Completo<br><br>
-
-        <strong>Experiência:</strong><br>
-        Auxiliar / Atendimento...<br><br>
-
-        <strong>Habilidades:</strong><br>
-        Comunicação, trabalho em equipe, informática básica
-    </p>
+    <div class="erro">
+        ⚠️ Nunca minta no currículo — isso pode te eliminar da vaga.
+    </div>
 </section>
 
 <footer>
-    <p>© 2026 - Guia Profissional</p>
+    <p>© 2026 - Trabalho Escolar</p>
 </footer>
 
 </body>
